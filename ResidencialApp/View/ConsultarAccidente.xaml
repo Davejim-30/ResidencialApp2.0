@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResidencialApp.View.ConsultarAccidente">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5"
+                     Spacing="10"
+                     VerticalOptions="Start"
+                     HorizontalOptions="Center">
+                <Label Text="Consulta Incidentes"
+               HorizontalTextAlignment="Center"
+               TextColor="White"
+               FontSize="45"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="0,0,0,0" />
+
+                <Frame BackgroundColor="LightGray"
+                   Padding="10"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   HorizontalOptions="FillAndExpand"
+                   WidthRequest="150">
+                    <StackLayout>
+                        <Label Text="Incidente"
+                           TextColor="Black"
+                           FontSize="Small"
+                           HorizontalOptions="Center" />
+                        <Frame Padding="10"
+                           BackgroundColor="White"
+                           CornerRadius="10"
+                           WidthRequest="220"
+                           HeightRequest="150"
+                           BorderColor="LightGray"
+                           VerticalOptions="Center"
+                           Margin="0,0,0,0">
+                            <Entry Text=""
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               TextColor="Black"
+                               Placeholder="Ingrese su nombre"
+                               BackgroundColor="White" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="LightGray"
+                   Padding="10"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   WidthRequest="380"
+                   Margin="0,0,0,0">
+                    <StackLayout Orientation="Horizontal"
+                             VerticalOptions="Center">
+                        <Label Text="Estado:  "
+                       
+                       VerticalOptions="Center"
+                       TextColor="Black"
+                       FontSize="Medium"
+                       Padding="10"
+                       BackgroundColor="LightGray" />
+
+                        <Frame Padding="10"
+                           BackgroundColor="White"
+                           CornerRadius="10"
+                           WidthRequest="260"
+                           HeightRequest="60"
+                           BorderColor="LightGray"
+                           VerticalOptions="Center"
+                           Margin="0,0,0,0">
+                            <Entry Text=""
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               TextColor="Black"
+                               Placeholder="Ingrese su nombre"
+                               BackgroundColor="White" />
+                        </Frame>
+
+
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="LightGray"
+                   Padding="10"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   WidthRequest="100"
+                   HeightRequest="100">
+                    <StackLayout>
+                        <Label Text="Responsables"
+                           TextColor="Black"
+                           FontSize="Small"
+                           HorizontalOptions="Center" />
+                        <Frame Padding="10"
+                           BackgroundColor="White"
+                           CornerRadius="10"
+                           WidthRequest="220"
+                           HeightRequest="60"
+                           BorderColor="LightGray"
+                           VerticalOptions="Center"
+                           Margin="0,0,0,0">
+                            <Entry Text=""
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               TextColor="Black"
+                               Placeholder="Ingrese su nombre"
+                               BackgroundColor="White" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="LightGray"
+                   Padding="10"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   HorizontalOptions="FillAndExpand"
+                   WidthRequest="150">
+                    <StackLayout>
+                        <Label Text="Registro actividades"
+                           TextColor="Black"
+                           FontSize="Small"
+                           HorizontalOptions="Center" />
+                        <Frame Padding="10"
+                           BackgroundColor="White"
+                           CornerRadius="10"
+                           WidthRequest="220"
+                           HeightRequest="80"
+                           BorderColor="LightGray"
+                           VerticalOptions="Center"
+                           Margin="0,0,0,0">
+                            <Entry Text=""
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               TextColor="Black"
+                               Placeholder="Ingrese su nombre"
+                               BackgroundColor="White" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Padding="10">
+                    <Button Text="Enviar"
+                            BackgroundColor="Gray"
+                            TextColor="White"
+                            CornerRadius="10"
+                            WidthRequest="200"
+                            HeightRequest="80"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

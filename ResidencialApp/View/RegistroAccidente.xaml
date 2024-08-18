@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResidencialApp.View.RegistroAccidente">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="5"
+                     Spacing="10"
+                     VerticalOptions="Start"
+                     HorizontalOptions="Center"
+                     Margin="0,0,0,0">
+            <StackLayout Padding="5"
+                         Spacing="10"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+                <Label Text="Registro Incidente"
+                       TextColor="White"
+                       FontSize="50"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Margin="90,0,0,0" />
+            </StackLayout>
+
+            <Frame BackgroundColor="LightGray"
+                   Padding="10"
+                   CornerRadius="10"
+                   HasShadow="True">
+                <StackLayout>
+                    <Label Text="Descripción"
+                           TextColor="Black"
+                           FontSize="Medium"
+                           HorizontalOptions="Start" />
+
+                    <!-- Entry grande -->
+                    <Entry Placeholder="Escribe aquí la descripción..."
+                           HeightRequest="200"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="FillAndExpand"
+                           BackgroundColor="LightGray"
+                           TextColor="Black"
+                           Margin="0,10,0,0" />
+                </StackLayout>
+            </Frame>
+            <StackLayout Orientation="Horizontal"
+                         Spacing="10"
+                         HorizontalOptions="FillAndExpand">
+                <!-- Primer Frame -->
+                <Frame BackgroundColor="LightGray"
+                       Padding="10"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       HorizontalOptions="FillAndExpand"
+                       WidthRequest="150">
+                    <StackLayout>
+                        <Label Text="Fecha"
+                               TextColor="Black"
+                               FontSize="Small"
+                               HorizontalOptions="Center" />
+                        <Frame Padding="10"
+                               BackgroundColor="White"
+                               CornerRadius="10"
+                               WidthRequest="150"
+                               HeightRequest="40"
+                               BorderColor="LightGray">
+                        <Label Text="{Binding ResidenData.CurrentDate}"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="Black" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Segundo Frame -->
+                <Frame BackgroundColor="LightGray"
+                       Padding="10"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       HorizontalOptions="FillAndExpand"
+                       WidthRequest="150">
+                    <StackLayout>
+                        <Label Text="Hora"
+                               TextColor="Black"
+                               FontSize="Small"
+                               HorizontalOptions="Center" />
+                        <Frame Padding="10"
+                               BackgroundColor="White"
+                               CornerRadius="10"
+                               WidthRequest="150"
+                               HeightRequest="40"
+                               BorderColor="LightGray">
+                            <Label Text="{Binding ResidenData.CurrentTime}"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="Black" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Padding="10">
+                <!-- Frame con el número "1" a la izquierda -->
+                <Frame CornerRadius="50" 
+                       WidthRequest="50" 
+                       HeightRequest="50" 
+                       BackgroundColor="White"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                    <Grid>
+                        <BoxView Color="White" 
+                                 CornerRadius="25"
+                                 HorizontalOptions="Center" 
+                                 VerticalOptions="Center" />
+                        <Image Source="unafoto.png"
+                               WidthRequest="30"
+                               HeightRequest="30"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </Grid>
+                </Frame>
+
+                <!-- Frame con Label para ubicacion -->
+                <Frame BackgroundColor="LightGray"
+                   Padding="10"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   WidthRequest="300"
+                   Margin="10,0,0,0">
+                    <StackLayout>
+                        
+                        <Frame Padding="10"
+                           BackgroundColor="White"
+                           CornerRadius="10"
+                           WidthRequest="150"
+                           HeightRequest="60"
+                           BorderColor="LightGray">
+                            <Entry Text=""
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="Center"
+                                   TextColor="Black"
+                                   Placeholder="Enter text here"
+                                   WidthRequest="200"
+                                   HeightRequest="90"
+                                   BackgroundColor="White"
+                                   Margin="1" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+                <Frame BackgroundColor="LightGray"
+                       Padding="10"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       WidthRequest="360"
+                       Margin="10,0,0,0">
+                    <StackLayout Orientation="Horizontal"
+                                VerticalOptions="Center">
+                        <Label Text="Prioridad:"
+                               VerticalOptions="Center"
+                               TextColor="Black"
+                               FontSize="Medium"
+                               Padding="10"
+                               BackgroundColor="LightGray" />
+
+                        <Frame Padding="10"
+                               BackgroundColor="White"
+                               CornerRadius="10"
+                               WidthRequest="220"
+                               HeightRequest="60"
+                               BorderColor="LightGray"
+                               VerticalOptions="Center"
+                               Margin="0,0,0,0">
+                            <Entry Text=""
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="Center"
+                                   TextColor="Black"
+                                   Placeholder="Ingrese su nombre"
+                                   BackgroundColor="White" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            
+                <Frame BackgroundColor="LightGray"
+                       Padding="10"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       WidthRequest="360"
+                       Margin="10,0,0,0">
+                    <StackLayout Orientation="Horizontal"
+                                 VerticalOptions="Center">
+                        <Label Text="Impacto: "
+                               VerticalOptions="Center"
+                               TextColor="Black"
+                               FontSize="Medium"
+                               Padding="10"
+                               BackgroundColor="LightGray" />
+
+                        <Frame Padding="10"
+                               BackgroundColor="White"
+                               CornerRadius="10"
+                               WidthRequest="220"
+                               HeightRequest="60"
+                               BorderColor="LightGray"
+                               VerticalOptions="Center"
+                               Margin="0,0,0,0">
+                            <Entry Text=""
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="Center"
+                                   TextColor="Black"
+                                   Placeholder="Ingrese su nombre"
+                                   BackgroundColor="White" />
+                        </Frame>
+                        
+                        
+                    </StackLayout>
+                </Frame>
+            
+                <Frame BackgroundColor="LightGray"
+                       Padding="10"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       WidthRequest="360"
+                       Margin="10,0,0,0">
+                    <StackLayout Orientation="Horizontal"
+                                 VerticalOptions="Center">
+                        <Label Text="Prioridad:"
+                               VerticalOptions="Center"
+                               TextColor="Black"
+                               FontSize="Medium"
+                               Padding="10"
+                               BackgroundColor="LightGray" />
+
+                        <Frame Padding="10"
+                               BackgroundColor="White"
+                               CornerRadius="10"
+                               WidthRequest="220"
+                               HeightRequest="60"
+                               BorderColor="LightGray"
+                               VerticalOptions="Center"
+                               Margin="0,0,0,0">
+                            <Entry Text=""
+                                   Placeholder="1/10"
+                                   PlaceholderColor="Gray"
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="Center"
+                                   TextColor="Black"
+                                   BackgroundColor="White" />
+                        </Frame>
+
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="LightGray"
+                       Padding="10"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       WidthRequest="360"
+                       Margin="10,0,0,0">
+                    <StackLayout>
+                        <Label Text="Involucrados"
+                               TextColor="Black"
+                               FontSize="Medium"
+                               HorizontalOptions="Center" />
+
+                        <!-- Entry grande -->
+                        <Entry Placeholder="Inserte involucrados "
+                               HeightRequest="100"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="FillAndExpand"
+                               BackgroundColor="LightGray"
+                               TextColor="Black"
+                               Margin="0,0,0,0" />
+                    </StackLayout>
+                </Frame>
+            
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Padding="10">
+                    <Button Text="Enviar"
+                            BackgroundColor="Gray"
+                            TextColor="White"
+                            CornerRadius="10"
+                            WidthRequest="200"
+                            HeightRequest="80"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                </StackLayout>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

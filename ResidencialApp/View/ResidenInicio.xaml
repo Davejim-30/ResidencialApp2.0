@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResidencialApp.View.ResidenInicio">
+
+
+    <StackLayout Spacing="5" 
+                 VerticalOptions="StartAndExpand" 
+                 HorizontalOptions="CenterAndExpand">
+
+        <!-- StackLayout para el texto grande que muestra la hora -->
+        <StackLayout Padding="5" 
+                     Spacing="20" 
+                     VerticalOptions="Center" 
+                     HorizontalOptions="CenterAndExpand"
+                     Margin="0,55,0,0">
+            <Label Text="{Binding ResidenData.CurrentTime}" 
+               TextColor="White" 
+               FontSize="50" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" 
+               Margin="0,0,0,0" />
+        </StackLayout>
+
+        <!-- StackLayout para el texto grande que muestra la fecha -->
+        <StackLayout Padding="5" 
+             Spacing="20" 
+             VerticalOptions="Center" 
+             HorizontalOptions="CenterAndExpand"
+             Margin="0,0,0,0">
+            <Label Text="{Binding ResidenData.CurrentDate}" 
+                   TextColor="White" 
+                   FontSize="20" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Margin="0,0,0,0" />
+        </StackLayout>
+
+        <!-- StackLayout para el mensaje de bienvenida -->
+        <StackLayout Padding="0" 
+                     VerticalOptions="Start" 
+                     HorizontalOptions="CenterAndExpand" 
+                     Margin="0,0,0,0">
+            <Label Text="Bienvenido" 
+               FontSize="Medium"
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" />
+        </StackLayout>
+
+        <!-- StackLayout para el botón de registrar incidente -->
+        <StackLayout Padding="5" Spacing="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
+            <Button x:Name="RegistrarInccidente" 
+                Clicked="RegistrarInccidente_Clicked" 
+                Text="Registrar Inccidente" 
+                BackgroundColor="LightSlateGray" 
+                TextColor="White" 
+                FontSize="Large" 
+                HeightRequest="100" 
+                WidthRequest="300" 
+                CornerRadius="20" />
+        </StackLayout>
+
+        <!-- StackLayout para el botón de registrar usuarios -->
+        <StackLayout Padding="5" Spacing="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
+            <Button x:Name="RegistrarUsuarios" 
+                Clicked="RegistrarUsuarios_Clicked" 
+                Text="Registrar Usuarios" 
+                BackgroundColor="LightSlateGray" 
+                TextColor="White" 
+                FontSize="Large" 
+                HeightRequest="100" 
+                WidthRequest="300" 
+                CornerRadius="20" />
+        </StackLayout>
+
+        <!-- StackLayout para el botón de consultar accidentes -->
+        <StackLayout Padding="5" Spacing="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
+            <Button x:Name="ConsultarAccidentes" 
+                Clicked="ConsultarAccidentes_Clicked" 
+                Text="Consultar Inccidentes" 
+                BackgroundColor="LightSlateGray" 
+                TextColor="White" 
+                FontSize="Large" 
+                HeightRequest="100" 
+                WidthRequest="300" 
+                CornerRadius="20" />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
